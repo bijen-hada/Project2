@@ -4,10 +4,13 @@
 <head>
     <meta charset="UFT-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Document</title>
+    <title>Reservia</title>
     <link href="./navbar.css" rel="stylesheet">
     <link href="./Main.css" rel="stylesheet">
-    <link href="../styles.css" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
+    <link href="./search.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/406da18a0b.js" crossorigin="anonymous" defer></script>
+
 </head>
 
 <body>
@@ -16,29 +19,40 @@
     <nav class="navbar">
         <ul class="navbar-items">
 
-            <li class="navbar-item">
-                <a href="/" class="navbar-logo"><img src="../images/logo/Reservia.svg" alt=""></a>
+            <li class="navbar-item mr-lg-auto">
+                <a href="/" class="navbar-logo ml-1"><img src="../images/logo/Reservia.svg" alt=""></a>
             </li>
-            <li class="navbar-item">
-                <a class="navbar-link" href="#" data-active>Accommodations</a>
+            <li class="navbar-item navbar-border-bottom navbar-border-top text-center">
+                <a class="navbar-link ml-1" href="#" data-active >Accommodations</a>
             </li>
-            <li class="navbar-item">
+            <li class="navbar-item navbar-border-bottom navbar-border-top text-center">
                 <a class="navbar-link" href="#">Activities</a>
             </li>
-            <li class="navbar-item">
-                <a class="navbar-link mr-1" href="#">Sign up</a>
+            <li class="navbar-item text-right">
+                <a class="navbar-link navbar-link-large mr-1" href="#">Sign up</a>
             </li>
         </ul>
     </nav>
     <main class="main">
-            <!-- Search -->
-            
-            <section class="search">
+        <!-- Search Input-->
+
+        <section class="search">
             <header class="searchHeader">
-            <h1 class="searchHeaderTitle">Find a place for your dream vacation</h1>
-            <p class="searchHeaderSubtitle">Downtown or in nature</p>
+                <h1 class="searchHeaderTitle">Find a place for your dream vacation</h1>
+                <p class="searchHeaderSubtitle">Downtown or in nature</p>
             </header>
-            </section>
+            <form class="searchForm" action="proceedFrom.html" method="GET">
+                <span class="searchFormIcon">
+                    <i class="fas fa-map-marker-alt searchFormIcon"></i>
+                </span>
+                <input class="searchFormInput" type="search" placeholder="Marseille, France" size="1">
+                <button class="searchFormSubmitButton">
+                    <span class="searchFormSubmitButtonText">Search</span>
+                    <i class="searchFormSubmitButtonIcon fas fa-search"></i>
+                </button>
+            </form>
+        </section>
+
     </main>
 
 </body>
