@@ -65,6 +65,6 @@
     display: block;
   }
   .searchFormSubmitButtonIcon {
-    display: none !important;
+    display: none ;
   }
 }
