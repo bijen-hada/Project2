@@ -1,60 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UFT-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <head>
+    <meta charset="UFT-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Reservia</title>
-    <link href="./navbar.css" rel="stylesheet">
-    <link href="./Main.css" rel="stylesheet">
-    <link href="./styles.css" rel="stylesheet">
-    <link href="./search.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/406da18a0b.js" crossorigin="anonymous" defer></script>
+    <link href="./navbar.css" rel="stylesheet"/>
+    <link href="./Main.css" rel="stylesheet"/>
+    <link href="./styles.css" rel="stylesheet"/>
+    <link href="./searchInput.css" rel="stylesheet"/>
+    <link href="./searchFilter.css" rel="stylesheet"/>
 
-</head>
+    <script
+      src="https://kit.fontawesome.com/406da18a0b.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
 
-<body>
-    <!-- Navigation bar -->
+  <body>
+    <!-- Navigation bar Section-->
 
     <nav class="navbar">
-        <ul class="navbar-items">
-
-            <li class="navbar-item mr-lg-auto">
-                <a href="/" class="navbar-logo ml-1"><img src="../images/logo/Reservia.svg" alt=""></a>
-            </li>
-            <li class="navbar-item navbar-border-bottom navbar-border-top text-center">
-                <a class="navbar-link ml-1" href="#" data-active >Accommodations</a>
-            </li>
-            <li class="navbar-item navbar-border-bottom navbar-border-top text-center">
-                <a class="navbar-link" href="#">Activities</a>
-            </li>
-            <li class="navbar-item text-right">
-                <a class="navbar-link navbar-link-large mr-1" href="#">Sign up</a>
-            </li>
-        </ul>
+      <ul class="navbar-items">
+        <li class="navbar-item mr-lg-auto">
+          <a href="/" class="navbar-logo ml-1"
+            ><img src="../images/logo/Reservia.svg" alt=""
+          /></a>
+        </li>
+        <li
+          class="navbar-item navbar-border-bottom navbar-border-top text-center"
+        >
+          <a class="navbar-link ml-1" href="#" data-active>Accommodations</a>
+        </li>
+        <li
+          class="navbar-item navbar-border-bottom navbar-border-top text-center"
+        >
+          <a class="navbar-link" href="#">Activities</a>
+        </li>
+        <li class="navbar-item text-right">
+          <a class="navbar-link navbar-link-large mr-1" href="#">Sign up</a>
+        </li>
+      </ul>
     </nav>
     <main class="main">
-        <!-- Search Input-->
+      <!-- Search Input Section-->
 
-        <section class="search">
-            <header class="searchHeader">
-                <h1 class="searchHeaderTitle">Find a place for your dream vacation</h1>
-                <p class="searchHeaderSubtitle">Downtown or in nature</p>
-            </header>
-            <form class="searchForm" action="proceedFrom.html" method="GET">
-                <span class="searchFormIcon">
-                    <i class="fas fa-map-marker-alt searchFormIcon"></i>
-                </span>
-                <input class="searchFormInput" type="search" placeholder="Marseille, France" size="1">
-                <button class="searchFormSubmitButton">
-                    <span class="searchFormSubmitButtonText">Search</span>
-                    <i class="searchFormSubmitButtonIcon fas fa-search"></i>
-                </button>
-            </form>
-        </section>
+      <section class="search">
+        <header class="searchHeader">
+          <h1 class="searchHeaderTitle">
+            Find a place for your dream vacation
+          </h1>
+          <p class="searchHeaderSubtitle">Downtown or in nature</p>
+        </header>
+        <form class="searchForm" action="proceedFrom.html" method="GET">
+          <span class="searchFormIcon">
+            <i class="fas fa-map-marker-alt searchFormIcon"></i>
+          </span>
+          <input
+            class="searchFormInput"
+            type="search"
+            placeholder="Marseille, France"
+            size="1">
+        </input>
+          <button class="searchFormSubmitButton">
+            <span class="searchFormSubmitButtonText">Search</span>
+            <i class="searchFormSubmitButtonIcon fas fa-search"></i>
+          </button>
+        </form>
+
+        <!--Search Filter Section -->
+
+        <div class="searchFilter">
+          <h3 class="searchFilterTitle">Filters</h3>
+          <div class="searchFilterF">
+            <div class="searchFilterFIcon">
+              <i class="fas fa-money-bill-wave searchFilterFIcon"></i>
+            </div>
+            <span class="searchFilterFTitle">Low cost</span>
+          </div>
+          <div class="searchFilterF">
+            <div class="searchFilterFIcon">
+              <i class="fas fa-child searchFilterFIcon"></i>
+            </div>
+            <span class="searchFilterFTitle">Family-friendly</span>
+          </div>
+          <div class="searchFilterF">
+            <div class="searchFilterFIcon">
+              <i class="fas fa-heart searchFilterFIcon"></i>
+            </div>
+            <span class="searchFilterFTitle">Romantic</span>
+          </div>
+          <div class="searchFilterF">
+            <div class="searchFilterFIcon">
+              <i class="fas fa-dog searchFilterFIcon"></i>
+            </div>
+            <span class="searchFilterFTitle">Pet-allowed</span>
+          </div>
+        </div>
+        <div class="searchResult">
+          <div class="searchResultIcon">
+            <i class="fas fa-info searchResultIcon"></i>
+          </div>
+          <p class="searchResultText">
+            More than 500 accommodations are available in this city
+          </p>
+        </div>
+      </section>
+
+      <!-- Hosting Section-->
 
     </main>
-
-</body>
-
+  </body>
 </html>
