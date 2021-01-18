@@ -37,11 +37,19 @@
   display: block;
   font-weight: 600;
 }
+.navbar-border-bottom [data-active=true] {
+  color: #0065FC;
+}
+
+.navbar-border-bottom [data-active=true] {
+  border-bottom: #0065FC ;
+}
+
 
 .navbar-link-large {
   font-weight: 700;
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 798px){
 .navbar-border-bottom {
   border-bottom: 3px solid #F2F2F2;
 }
