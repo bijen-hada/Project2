@@ -9,6 +9,7 @@
     <link href="./styles.css" rel="stylesheet"/>
     <link href="./searchInput.css" rel="stylesheet"/>
     <link href="./searchFilter.css" rel="stylesheet"/>
+    <link href="./accommodation.css" rel="stylesheet"/>
 
     <script
       src="https://kit.fontawesome.com/406da18a0b.js"
@@ -28,9 +29,9 @@
           /></a>
         </li>
         <li
-          class="navbar-item navbar-border-bottom navbar-border-top text-center"
+          class="navbar-item navbar-border-bottom navbar-border-top text-center" data-active="true"
         >
-          <a class="navbar-link ml-1" href="#" data-active>Accommodations</a>
+          <a class="navbar-link ml-1" href="#" data-active="true">Accommodations</a>
         </li>
         <li
           class="navbar-item navbar-border-bottom navbar-border-top text-center"
@@ -99,7 +100,7 @@
         </div>
         <div class="searchResult">
           <div class="searchResultIcon">
-            <i class="fas fa-info searchResultIcon"></i>
+            <i class="fas fa-info "></i>
           </div>
           <p class="searchResultText">
             More than 500 accommodations are available in this city
@@ -107,22 +108,64 @@
         </div>
       </section>
 
-      <!-- Hotel List Section-->
-      <section class="hotel" id="hotel">
-        <div class="hotelRandom">
-          <header class="hotelRandomHeader">
-            <h1 class="hotelRandomHtitle">Accommodations in Marseille</h1>
-          </header>
-    <article class="hotelRandomCard">
-          <a href="#">
-              <img  class="hotelRandomCardFigureImg"
-                src="../images/Accommodations/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                alt=""> 
-          </a>
-        </article>
+      <!-- Accommodation List Section-->
+      <div class="container">
+      <section class="bG-sm-grey border-sm-radius">
+      <header class="hotelResults">
+      <h1 class="hotelResultsTitle">Accommodations in Marseille</h1>
+      </header>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card">
+              <img src="../images/Accommodations/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Auberge la cannebiere </h5>
+                <p class="card-text">Night starting at<span class="price">25<i class="fas fa-euro-sign"></i></span></p>
+                <div class="card-stars">
+              <i class="fas fa-star " data-active="true"></i>
+              <i class="fas fa-star " data-active="true"></i>
+              <i class="fas fa-star " data-active="true"></i>
+              <i class="fas fa-star " data-active="true"></i>
+              <i class="fas fa-star " data-active="false"></i>
+            </div>
+                </div>
+              </div>
+            </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card">
+              <img src="../images/Accommodations/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Auberge la cannebiere </h5>
+                <p class="card-text">Night starting at<span class="price">25<i class="fas fa-euro-sign"></i></span></p>
+                <div class="card-stars">
+              <i class="fas fa-star " data-active="true"></i>
+              <i class="fas fa-star " data-active="true"></i>
+              <i class="fas fa-star " data-active="true"></i>
+              <i class="fas fa-star " data-active="true"></i>
+              <i class="fas fa-star " data-active="false"></i>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+            <div class="card">
+              <img src="../images/Accommodations/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Auberge la cannebiere </h5>
+                <p class="card-text">Night starting at<span class="price">25<i class="fas fa-euro-sign"></i></span></p>
+                <div class="card-stars">
+              <i class="fas fa-star " data-active="true"></i>
+              <i class="fas fa-star " data-active="true"></i>
+              <i class="fas fa-star " data-active="true"></i>
+              <i class="fas fa-star " data-active="true"></i>
+              <i class="fas fa-star " data-active="false"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
       </section>
-
+    </div>
     </main>
   </body>
 </html>
