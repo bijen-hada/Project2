@@ -39,12 +39,8 @@
 }
 .navbar-border-bottom [data-active=true] {
   color: #0065FC;
+  border-bottom: #0065FC;
 }
-
-.navbar-border-bottom [data-active=true] {
-  border-bottom: #0065FC ;
-}
-
 
 .navbar-link-large {
   font-weight: 700;
