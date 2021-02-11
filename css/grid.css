@@ -127,7 +127,7 @@ body {
 
 .card-img-top-tall {
   max-width: 100%;
-  height: 400px;
+  height: 175px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -212,9 +212,12 @@ body {
 @media (min-width: 768px) {
   .px-sm-1 {
     padding-right: 15px;
-    padding-left: 15px;
+    padding-left: 15px; 
   }
-
+.card-img-top-tall{
+  height: 400px;
+  
+}
   .flex-direction-sm-row {
     flex-direction: row;
   }

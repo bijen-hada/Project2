@@ -1,20 +1,14 @@
 .footer{
   display: flex;
-  max-width: 100%;
-  width: 1440px;
-  margin: auto;
-  padding: 0 30px;
-  box-sizing: border-box;
 }
-.footer-col {
+.footer-items {
   width: 30%;
-  padding: 30px 30px;
 }
-.footer-col-link {
+.footer-item {
   display: block;
   margin: 15px 0;
 }
-.footer-col-link:hover {
+.footer-item:hover {
   text-decoration: underline;
 }
 
@@ -23,21 +17,21 @@
     flex-direction: column;
     padding: 30px;
   }
-  .footer-col {
+  .footer-item {
     width: 100%;
     padding: 0;
     margin: 30px 0;
   }
-  .footer-col:first-child {
+  .footer-item:first-child {
     margin-top: 0;
   }
-  .footer-col:last-child {
+  .footer-item:last-child {
     margin-bottom: 0;
   }
-  .footer-col-title {
+  .footer-item-title {
     margin: 0;
   }
-  .footer-col-link:last-child {
+  .footer-item:last-child {
     margin-bottom: 0;
   }
 }
